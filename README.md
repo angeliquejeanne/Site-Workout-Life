@@ -26,10 +26,10 @@
     Les autres pages arrivent ^^
 </h2>
 <p align="center" style="display: flex; justify-content: space-around;">
-    <a href="" style="text-decoration: none;">
+    <a href="https://anggiie.github.io/Site-Workout-Life/" style="text-decoration: none;">
         <img src="./src/capts/Capture d’écran 2021-04-30 à 23.57.59.png" width="400" alt=""/>
     </a>
-    <a href="" style="text-decoration: none;">
+    <a href="https://anggiie.github.io/Site-Workout-Life/" style="text-decoration: none;">
         <img src="./src/capts/Capture d’écran 2021-04-30 à 23.58.01.png" width="400" alt=""/>
     </a>
 </p>
