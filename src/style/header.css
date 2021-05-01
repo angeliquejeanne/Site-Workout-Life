@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    width: 100%;
+}
+.main-content nav {
+  position: relative;
+  padding: 8px 0 0;
+  z-index: 1;
+  background-color: rgba(255, 250, 250, 0.2);
+}
+.main-content nav .wrapper {
+  display: flex;
+  justify-content: space-between!important;
+  align-items: center;
+  height: 75px;
+}
+
+.main-content nav .wrapper .mobile-menu {
+  display: none;
+  width: fit-content;
+  font-size: 20px;
+  padding: 15px;
+  cursor: pointer;
+}
+.main-content .logo {
+  font-size: 24px;
+  font-family: 'Heebo', sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+.main-content nav .wrapper .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.main-content nav .wrapper .nav-links a {
+  display: inline-block;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  transition: color 0.2s;
+  font-size: 0.875em;
+  text-decoration: none;
+  padding: 15px;
+  white-space: nowrap;
+  color: #222323;
+}
+
+.main-content nav .wrapper .nav-links a:hover {
+    border-bottom: 1px solid black;
+}
+.mobile-drawer.active {
+    display: flex;
+    overflow: hidden;
+}
+.mobile-drawer {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-family: Ubuntu, sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  z-index: 100;
+  animation: fade-in 1s ease-in-out both;
+}
+
+.mobile-drawer a {
+  width: 267px;
+  text-align: center;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.mobile-drawer i {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+/* Animation apparition titre, texte & btn */
+@keyframes slide-right {
+  0% {
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main-content nav .wrapper .nav-links a {
+    display: none;
+  }
+  .main-content nav .wrapper .mobile-menu {
+    display: block;
+  }
+  .main-content .logo {
+    font-size: 20px;
+    font-family: 'Heebo', sans-serif;
+    color: black;
+    font-weight: bold;
+  }
+}

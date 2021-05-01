@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .main-content {
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+  }
+  
+  .main-content {
+    background-image: url("../img/background/background-banner.jpg.webp");
+  }
+  
+  .main-content .wrapper {
+    position: relative;
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    z-index: 2;
+    /* background-color: aqua; */
+  }
+  
+  #about {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 50%;
+    position: absolute;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    align-items: center;
+  }
+  
+  #about .left {
+    flex: 1 1 auto;
+  }
+  
+  #about .right {
+    background-color: rgba(254, 253, 253, 0.5);
+    flex: 1 0 655px;
+    max-width: 720px;
+    padding: 10px 35px 45px 35px;
+    color: black;
+    height: 800px;
+  }
+  
+  
+  #about .right h1 {
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 28px;
+    margin: 5px auto 15px;
+    font-family: 'Heebo', sans-serif;
+  }
+  
+  #about .right p {
+      line-height: 2;
+      font-size: 17px;
+      font-family: 'Heebo', sans-serif;
+  }
+  #about .right p:nth-child(2)  {
+      padding: 0 0 10px;
+  }
+  #about .right p:nth-child(3) {
+      padding: 10px 20px;
+  }
+  #about .right p:nth-child(4) {
+      padding: 0 0 10px ;
+  }
+  #about .right p:nth-child(6) {
+      padding: 0 0 10px ;
+  }
+  #about .right p:nth-child(8) {
+      padding: 0 0 10px ;
+      margin-bottom: 20px;
+  }
+  #about .right ul {
+    margin: 0;
+    padding: 5px 0 10px;
+  }
+  #about .right ul li{
+     list-style: none;
+     line-height: 2;
+     font-size: 15px;
+      font-family: 'Heebo', sans-serif;
+  }
+  
+  
+  #about .right ul li::before{
+     content: '';
+     display: inline-block;
+     height: 10px;
+     width: 20px;
+     background-image: url('../img/diamond.png');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: contain;
+  }
+  
+  @media only screen and (max-width: 768px) {
+  
+    .main-content {
+      position: relative;
+      height: 200px;
+      min-height: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  
+    #about {
+      width: 100%;
+      position: relative;
+      padding: 0;
+      display: block;
+    }
+  
+    #about .left {
+      display: none;
+    }
+  
+    #about .right {
+      width: 100%;
+    }
+  }

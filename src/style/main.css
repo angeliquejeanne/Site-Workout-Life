@@ -1,0 +1,134 @@
+/* RESETS */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+body {
+  height: 100%;
+  font-family: 'Heebo', sans-serif;
+  color: #22263B;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(241, 241, 241, 0.4);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5A36F5;
+  transition: all .25s ease;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5A36F5;
+} 
+
+.main-content {
+  background: #fff;
+  position: relative;
+}
+.main-content.single-program {
+  background: #FAFBFD;
+  position: relative;
+}
+
+/* Programs listing page */
+.side-title {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  right: -125px;
+  transform: rotate(90deg);
+  font-size: 12px;
+  z-index: 1000;
+}
+.side-title .line {
+  width: 130px;
+  height: 1px;
+  background-color: #22263B;
+  margin-right: 30px;
+}
+.mobile-drawer {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: snow;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh!important;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-family: Ubuntu, sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  z-index: 3;
+  animation: fade-in 1s ease-in-out both;
+}
+.wrapper {
+  position: relative;
+  max-width: 1140px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.header-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url('./img/program-home-page-banner.webp');
+  height: 100vh;
+  min-height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+header .header-img {
+  position: absolute;
+  right: 40%;
+  top: -50px;
+  height: 100%;
+  transform: translateX(50%);
+}
+header .header-img img {
+  height: 100%;
+}
+header .header-title {
+  margin-bottom: 350px;
+  z-index: 10;
+}
+header .header-title h1 {
+  font-weight: 300;
+  font-size: 60px;
+  margin: 0 0 14px;
+  line-height: 70px;
+}
