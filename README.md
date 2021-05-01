@@ -23,7 +23,28 @@
 <h2 align="center" style="color: grey; font-size: 24px;">
     Site actuellement en cours de réalisation, actuellement la partie "home" est entièrement réalisée et responsive !
     <br>
-    Les autres pages arrivent ^^
+    Les autres pages arrivent bientôt.
+</h2>
+<hr>
+<h2 align="center" style="color: grey; font-size: 24px;">
+    Page Home
+</h2>
+<p align="center">
+    <a href="">
+        <img src="./src/capts/Capture d’écran 2021-04-30 à 23.57.46.png" width="550" alt=""/>
+    </a>
+</p>
+<p align="center" style="display: flex; justify-content: space-around;">
+    <a href="https://anggiie.github.io/Site-Workout-Life/" style="text-decoration: none;">
+        <img src="./src/capts/Capture d’écran 2021-04-30 à 23.57.59.png" width="400" alt=""/>
+    </a>
+    <a href="https://anggiie.github.io/Site-Workout-Life/" style="text-decoration: none;">
+        <img src="./src/capts/Capture d’écran 2021-04-30 à 23.58.01.png" width="400" alt=""/>
+    </a>
+</p>
+<hr>
+<h2 align="center" style="color: grey; font-size: 24px;">
+    Page Program
 </h2>
 <p align="center">
     <a href="">
