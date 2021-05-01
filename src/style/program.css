@@ -1,0 +1,482 @@
+
+* {
+    box-sizing: border-box;
+}
+/* RESETS */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: blue;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  height: 100%;
+  font-family: 'Heebo', sans-serif;
+  color: #22263B;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5A36F5;
+  transition: all .25s ease;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5A36F5;
+}
+
+.main-content {
+  background: #fff;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+.main-content.single-program {
+  background: #FAFBFD;
+  position: relative;
+}
+
+/* Programs listing page */
+.side-title {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  right: -125px;
+  transform: rotate(90deg);
+  font-size: 12px;
+  z-index: 1000;
+}
+
+.side-title .line {
+  width: 130px;
+  height: 1px;
+  background-color: black;
+  margin-right: 30px;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 1140px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url('../img/background/program-home-page-banner.webp');
+  height: 100vh;
+  min-height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+header .header-img {
+  position: absolute;
+  right: 40%;
+  top: -50px;
+  height: 100%;
+  transform: translateX(50%);
+}
+
+header .header-img img {
+  height: 100%;
+}
+
+header .header-title {
+  margin-bottom: 350px;
+  z-index: 10;
+  position: relative;
+  background-color: rgba(255, 250, 250, 0.1);
+}
+header .header-title h1 {
+  font-weight: 300;
+  font-size: 60px;
+  margin: 0 0 14px;
+  line-height: 70px;
+  color: black;
+}
+header .header-title button {
+  padding: 15px 40px;
+  background-color: transparent;
+  border: 1px solid snow;
+  color: black;
+  cursor: pointer;
+  transition: all .25s ease;
+}
+
+header .header-title button:hover {
+  background-color: #5A36F5;
+  color: #FFF;
+}
+
+header .scroll-btn {
+  position: absolute;
+  bottom: -50vh;
+  left: 100px;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: snow;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+header .scroll-btn:hover {
+  opacity: .5;
+}
+
+header .scroll-btn {
+  padding-top: 55px;
+}
+
+header .scroll-btn span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  margin-left: -12px;
+  border-left: 3px solid snow;
+  border-bottom: 3px solid snow;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: slideBottom 1.5s infinite;
+  animation: slideBottom 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes slideBottom {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes slideBottom {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+/* tag sur la partie droite */
+.side-title {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    position:fixed;
+    top:50%;
+    right:-125px;
+    -webkit-transform:rotate(90deg);
+    transform:rotate(90deg);
+    font-size:12px;
+    z-index:1000;
+    color: black;
+    background-color: rgba(255, 250, 250, 0.1);
+}
+.side-title .line{
+    width:130px;
+    height:2px;
+    background-color:black;
+    margin-right:30px;
+}
+.sig-tag {
+  display: flex;
+  align-items: center;
+  margin: 0 0 30px;
+  font-size: 14px;
+  color: black;
+}
+
+.sig-tag .sig-line {
+  height: 2px;
+  width: 10px;
+  margin-right: 5px;
+  background-color: black;
+}
+
+.workout-list {
+  width: 100%;
+}
+
+.workout-list .sep-line {
+  height: 2px;
+  width: 40px;
+  margin-bottom: 20px;
+  background-color: black;
+}
+
+.workout-list .section-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.workout-list .programs-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.workout-list .programs-list .program-card {
+  position: relative;
+  width: 360px;
+  height: 470px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.workout-list .programs-list .program-card .card-thumbnail {
+  width: 100%;
+}
+
+.workout-list .programs-list .program-card .overlay {
+  position: absolute;
+  top: 58px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: all .3s ease;
+}
+
+.workout-list .programs-list .program-card:hover .overlay {
+  top: 0;
+}
+
+.workout-list .programs-list .program-card .overlay img {
+  width: 100%;
+  height: 100%;
+}
+
+.workout-list .programs-list .program-card .overlay .detail {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  padding: 0 20px 20px;
+}
+
+.workout-list .programs-list .program-card .overlay .detail .date {
+  font-size: 12px;
+  margin: 0;
+}
+
+.workout-list .programs-list .program-card .overlay .detail .title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.workout-list .programs-list .program-card .overlay .detail .schedule {
+  display: flex;
+  font-size: 16px;
+}
+
+.workout-list .programs-list .program-card .overlay .detail .schedule .entry {
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.workout-list .programs-list .program-card .overlay .detail .schedule .entry .value {
+  font-weight: bold;
+  margin: 0;
+  color: #2DE2CF;
+}
+
+.workout-list .programs-list .program-card .overlay .detail .schedule .entry .label {
+  font-size: 14px;
+  margin: 0;
+}
+
+.workout-list .programs-list .program-card .overlay .detail .more-details {
+  margin: 0;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.workout-list .programs-list .program-card .overlay .detail .more-details:last-of-type {
+  margin-top: 0px;
+}
+
+.workout-list .programs-list .program-card .overlay .detail .more-details span {
+  color: #D4DAE6;
+}
+.ad-area {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.ad-area img {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+footer p {
+  font-size: 12px;
+  color: #777777;
+}
+
+footer i {
+  margin-left: 30px;
+}
+@media only screen and (max-width: 1200px) {
+  header .header-img {
+    right: 0;
+    transform: translateX(0);
+  }
+}
+@media only screen and (max-width: 1050px) {
+  header .header-img {
+    right: -150px;
+  }
+
+  header .header-title {
+    margin-bottom: 300px;
+  }
+
+  .workout-list .programs-list .program-card {
+    width: 100%;
+    height: calc(100% - 37px);
+  }
+
+  .workout-list .programs-list a {
+    width: 48%;
+  }
+
+  .workout-list .programs-list .program-card .overlay {
+    top: 0;
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 875px) {
+  header .header-title h1 {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  nav .logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  header {
+    height: 100%;
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  .header-img {
+    position: relative;
+    height: 50vh;
+    min-height: 300px;
+  }
+
+  header .header-img {
+    position: relative;
+    right: initial;
+    top: 40px;
+    height: 320px;
+    margin-bottom: 70px;
+  }
+
+  header .header-title {
+    margin-bottom: 10px;
+  }
+
+  header .header-title h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  header .scroll-btn {
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .workout-list .programs-list .program-card {
+    width: 100%;
+    height: calc(100% - 37px);
+  }
+
+  .workout-list .programs-list a {
+    width: 100%;
+  }
+}
