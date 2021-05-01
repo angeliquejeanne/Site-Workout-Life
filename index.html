@@ -8,8 +8,8 @@
 
     <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Capriola|Heebo:300,400,700&amp;display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/style/header.css">
+    <link rel="stylesheet" href="./src/style/style.css">
 </head>
 
 <body>
@@ -19,11 +19,11 @@
 
         <div class="mobile-drawer">
             <i class="fas fa-times"></i>
-            <a href="index.html">Home</a>
-            <a href="">Free Programs</a>
+            <a href="./index.html">Home</a>
+            <a href="./Links/program.html">Free Programs</a>
             <a href="#">Recipes</a>
             <a href="#">Store</a>
-            <a href="#">About</a>
+            <a href="./Links/about.html">About</a>
         </div>
 
         <nav>
@@ -33,11 +33,11 @@
                 <p class="logo">Jane Doe</p>
     
                 <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="">Free Programs</a>
+                    <a href="./index.html">Home</a>
+                    <a href="./Links/program.html">Free Programs</a>
                     <a href="#">Recipes</a>
                     <a href="#">Store</a>
-                    <a href="#">About</a>
+                    <a href="./Links/about.html">About</a>
                     <div class="mobile-menu">
                         <i class="fas fa-bars"></i>
                     </div>
@@ -53,7 +53,7 @@
                 <p>Start a #JaneDoeChallenge or check out my recipes</p>
     
                 <div class="btns-holder">
-                    <a href="" class="btn">Programs</a>
+                    <a href="./Links/program.html" class="btn">Programs</a>
                     <a href="" class="btn">Recipes</a>
                     <a href="" class="btn">Store</a>
                 </div>
@@ -66,21 +66,8 @@
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
 
-<script>
-(function() {
-    var css = document.createElement("link");
-    css.href = "https://use.fontawesome.com/releases/v5.1.0/css/all.css";
-    css.rel = "stylesheet";
-    css.type = "text/css";
-    document.getElementsByTagName("head")[0].appendChild(css);
-})();
-</script>
 
-<script>
-$(".fa-bars, .fa-times, .mobile-drawer a").click(() => {
-    $(".mobile-drawer").toggleClass("active");
-});
-</script>
+<script src="./src/javascript/toggle.js"></script>
 
 </body>
 </html>
