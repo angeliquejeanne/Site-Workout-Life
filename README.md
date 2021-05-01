@@ -63,8 +63,8 @@
 <div align="center">
     <h3> Project (Dans les prochaines semaines)</h3>
     <ul>
-       <del> <li style="list-style: none;">- Ajout de la page "Programs / Free Programs</li>
-       <del> <li style="list-style: none;">- Ajout de la partie responsive de la page "Programs</li> </del>
+        <li style="list-style: none;"><del> - Ajout de la page "Programs / Free Programs </del></li>
+        <li style="list-style: none;"><del> - Ajout de la partie responsive de la page "Programs </del></li> 
         <li style="list-style: none;">- Ajout de la page "Recipes"</li>
         <li style="list-style: none;">- Ajout de la partie responsive de la page "Recipes"</li>
         <li style="list-style: none;">- Ajout de la page "About"</li>
