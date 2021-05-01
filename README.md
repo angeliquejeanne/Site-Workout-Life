@@ -62,17 +62,17 @@
 <br>
 <div align="center">
     <h3> Project (Dans les prochaines semaines)</h3>
-    <ul>
-        <li style="list-style: none;"><del> - Ajout de la page "Programs / Free Programs </del></li>
-        <li style="list-style: none;"><del> - Ajout de la partie responsive de la page "Programs </del></li> 
-        <li style="list-style: none;">- Ajout de la page "Recipes"</li>
-        <li style="list-style: none;">- Ajout de la partie responsive de la page "Recipes"</li>
-        <li style="list-style: none;">- Ajout de la page "About"</li>
-        <li style="list-style: none;">- Ajout de la partie responsive de la page "About"</li>
-        <li style="list-style: none;">- Ajout de la page "Store"</li>
-        <li style="list-style: none;">- Ajout de la partie responsive de la page "Store"</li>
-        <li style="list-style: none;">- Ajout de la page "Programs/NomDuProgram"</li>
-        <li style="list-style: none;">- Ajout de la partie responsive de la page "Programs/NomDuProgram"</li>
+    <ul style="list-style: none;"">
+        <li><del> - Ajout de la page "Programs / Free Programs </del></li>
+        <li><del> - Ajout de la partie responsive de la page "Programs </del></li> 
+        <li>- Ajout de la page "Recipes"</li>
+        <li>- Ajout de la partie responsive de la page "Recipes"</li>
+        <li>- Ajout de la page "About"</li>
+        <li>- Ajout de la partie responsive de la page "About"</li>
+        <li>- Ajout de la page "Store"</li>
+        <li>- Ajout de la partie responsive de la page "Store"</li>
+        <li>- Ajout de la page "Programs/NomDuProgram"</li>
+        <li>- Ajout de la partie responsive de la page "Programs/NomDuProgram"</li>
     </ul> 
 </div>
 <br>
