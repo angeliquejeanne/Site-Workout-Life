@@ -1,25 +1,28 @@
 * {
-    box-sizing: border-box;
-  }
-  html, body {
-    margin: 0;
-    padding: 0;
-  }
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  .main-content {
-    position: fixed;
-    width: 100%;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: hidden;
-  }
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main-content {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
   
   .main-content {
     background-image: url("../img/background/background-banner.jpg.webp");
@@ -32,7 +35,80 @@
     margin: 0 auto;
     padding: 0 30px;
     z-index: 2;
-    /* background-color: aqua; */
+  }
+  
+  .main-content nav {
+    position: relative;
+    padding: 8px 0 0;
+    z-index: 2;
+  }
+  
+  .main-content nav .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+  }
+  
+  .main-content nav .wrapper .mobile-menu {
+    display: none;
+    width: fit-content;
+    font-size: 20px;
+    padding: 15px;
+    cursor: pointer;
+  }
+  
+  .mobile-drawer {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    z-index: 3;
+  }
+  
+  .mobile-drawer.active {
+    display: flex;
+  }
+  
+  .mobile-drawer a {
+    width: 267px;
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .main-content nav .wrapper img {
+    width: 113px;
+  }
+  
+  .main-content nav .wrapper .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .main-content nav .wrapper .nav-links a {
+    display: inline-block;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1em;
+    transition: color 0.2s;
+    font-size: 0.875em;
+    text-decoration: none;
+    padding: 15px;
+    white-space: nowrap;
+    color: #222323;
   }
   
   #about {
@@ -50,57 +126,41 @@
   }
   
   #about .right {
-    background-color: rgba(254, 253, 253, 0.5);
+    background-color: rgba(254, 253, 253, 0.85);
     flex: 1 0 655px;
-    max-width: 720px;
+    max-width: 655px;
     padding: 10px 35px 45px 35px;
-    color: black;
-    height: 800px;
-  }
-  
-  
-  #about .right h1 {
-    font-weight: 500;
-    line-height: 1.5;
-    font-size: 28px;
-    margin: 5px auto 15px;
     font-family: 'Heebo', sans-serif;
+    font-size: 15px;
+    color: #22263b;
+    line-height: 1.7em;
   }
   
-  #about .right p {
-      line-height: 2;
-      font-size: 17px;
-      font-family: 'Heebo', sans-serif;
+  .right h1 {
+    font-weight: 500;
+    font-family: 'Heebo', sans-serif;
+    color: #22263b;
+    line-height: 1.7em;
   }
-  #about .right p:nth-child(2)  {
-      padding: 0 0 10px;
+ .right p {
+    font-family: 'Heebo', sans-serif;
+    font-size: 15px;
+    color: #22263b;
+    line-height: 1.7em;
+    padding: 10px 0px;
   }
-  #about .right p:nth-child(3) {
-      padding: 10px 20px;
+  .right p:nth-child(3){
+    padding: 0 20px;
   }
-  #about .right p:nth-child(4) {
-      padding: 0 0 10px ;
-  }
-  #about .right p:nth-child(6) {
-      padding: 0 0 10px ;
-  }
-  #about .right p:nth-child(8) {
-      padding: 0 0 10px ;
-      margin-bottom: 20px;
-  }
-  #about .right ul {
+  ul {
     margin: 0;
-    padding: 5px 0 10px;
+    padding: 0;
   }
-  #about .right ul li{
+ ul li{
      list-style: none;
-     line-height: 2;
-     font-size: 15px;
-      font-family: 'Heebo', sans-serif;
   }
   
-  
-  #about .right ul li::before{
+  ul li::before{
      content: '';
      display: inline-block;
      height: 10px;
@@ -135,4 +195,13 @@
     #about .right {
       width: 100%;
     }
+  
+    .main-content nav .wrapper .nav-links a {
+      display: none;
+    }
+  
+    .main-content nav .wrapper .mobile-menu {
+      display: block;
+    }
+  
   }
