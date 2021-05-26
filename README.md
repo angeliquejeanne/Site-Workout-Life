@@ -67,14 +67,16 @@
         <li><del> - Ajout de la partie responsive de la page "Accueil" </del></li>
         <li><del> - Ajout de la page "Programs / Free Programs" </del></li>
         <li><del> - Ajout de la partie responsive de la page "Programs" </del></li> 
-        <li>- Ajout de la page "Recipes"</li>
-        <li>- Ajout de la partie responsive de la page "Recipes"</li>
+        <li><del>- Ajout de la page "Recipes"</del></li>
+        <li><del>- Ajout de la partie responsive de la page "Recipes"</del></li>
         <li><del>- Ajout de la page "About"</del></li>
         <li><del>- Ajout de la partie responsive de la page "About"</del></li>
         <li>- Ajout de la page "Store"</li>
         <li>- Ajout de la partie responsive de la page "Store"</li>
         <li>- Ajout de la page "Programs/NomDuProgram"</li>
         <li>- Ajout de la partie responsive de la page "Programs/NomDuProgram"</li>
+        <li>- Ajout de la page "Recipes/NomDeLaRecette"</li>
+        <li>- Ajout de la partie responsive de la page "Recipes/NomDeLaRecette"</li>
     </ul> 
 </div>
 <br>
