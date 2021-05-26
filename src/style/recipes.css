@@ -501,10 +501,11 @@ main > section h2 {
 }
 #pagination li.active {
     margin: 0 17px;
-    background-color: #F5F5F5;
+    background-color: rgb(175, 175, 175);
     padding: 5px 12px;
     border-radius: 4px;
     margin: 0 5px;
+    font-weight: 600;
 }
 /* Unstyled List */
 ul.ns {
@@ -517,15 +518,6 @@ ul.ns {
 ul.ns.il li {
   display: inline;
 }
-  
-
-
-
-
-
-
-
-
 /* FOOTER */
 footer {
   display: flex;
